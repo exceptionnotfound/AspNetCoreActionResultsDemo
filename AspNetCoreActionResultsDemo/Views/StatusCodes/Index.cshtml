@@ -1,0 +1,25 @@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Status Code Results</h2>
+
+<p>ASP.NET Core can return many common HTTP status codes as dedicated results.  These include:</p>
+
+<ul>
+    <li><a asp-action="OkResult">200 OK</a></li>
+    <li><a asp-action="CreatedResult">201 Created</a></li>
+    <li><a asp-action="NoContentResult">204 No Content</a></li>
+    <li><a asp-action="BadRequestResult">400 Bad Request</a></li>
+    <li><a asp-action="NotFoundResult">404 Not Found</a></li>
+    <li><a asp-action="UnsupportedMediaTypeResult">415 Unsupported Media Type</a></li>
+</ul>
+
+<p>ASP.NET Core can also return a generic StatusCodeResult, which can return any of the myriad HTTP status codes, such as:</p>
+
+<ul>
+    <li><a asp-action="StatusCodeResult" asp-route-statusCode="410">410 Gone</a></li>
+    <li><a asp-action="StatusCodeResult" asp-route-statusCode="451">451 Unavailable For Legal Reasons</a></li>
+    <li><a asp-action="StatusCodeResult" asp-route-statusCode="418">418 I'm a Teapot</a></li>
+</ul>
