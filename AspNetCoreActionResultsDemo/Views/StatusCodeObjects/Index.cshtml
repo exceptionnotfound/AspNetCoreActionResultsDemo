@@ -1,0 +1,23 @@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Status Code Results w/ Objects</h2>
+
+<p>For a few common HTTP status codes, ASP.NET Core can return that status code as well as a custom object.  </p>
+
+<ul>
+    <li><a asp-action="OkObjectResult">200 OK</a></li>
+    <li><a asp-action="CreatedObjectResult">201 Created</a></li>
+    <li><a asp-action="BadRequestObjectResult">400 Bad Request</a></li>
+    <li><a asp-action="NotFoundObjectResult">404 Not Found</a></li>
+</ul>
+
+<p>Just like with regular status code results, we can also use a generic ObjectResult to return objects for other status codes, such as:</p>
+
+<ul>
+    <li><a asp-action="ObjectResult" asp-route-statusCode="410">410 Gone</a></li>
+    <li><a asp-action="ObjectResult" asp-route-statusCode="451">451 Unavailable for Legal Reasons</a></li>
+    <li><a asp-action="ObjectResult" asp-route-statusCode="418">418 I'm a Teapot</a></li>
+</ul>
