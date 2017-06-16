@@ -31,11 +31,5 @@ namespace AspNetCoreActionResultsDemo.Controllers
         {
             return Content("Here's the ContentResult message.");
         }
-
-        [HttpGet]
-        public IActionResult ViewComponentResult()
-        {
-            return ViewComponent()
-        }
     }
 }
