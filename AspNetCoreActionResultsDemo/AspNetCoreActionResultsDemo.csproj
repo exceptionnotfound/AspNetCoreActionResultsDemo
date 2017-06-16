@@ -28,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Files\" />
+    <Folder Include="Views\Content\" />
     <Folder Include="Views\Redirects\" />
     <Folder Include="Views\StatusCodes\" />
   </ItemGroup>
