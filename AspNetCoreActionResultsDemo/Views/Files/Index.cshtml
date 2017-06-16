@@ -1,0 +1,16 @@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>File Results</h2>
+
+<p>ASP.NET Core has five different ways to return a file or the contents of a file.</p>
+
+<ul>
+    <li><a asp-action="FileResult">FileResult</a>, which acts as a wrapper for the other results.</li>
+    <li><a asp-action="FileContentResult">FileContentResult</a>, which returns a file from a byte array and content type.</li>
+    <li><a asp-action="FileStreamResult">FileStreamResult</a>, which returns a file from a stream and content type.</li>
+    <li><a asp-action="PhysicalFileResult">PhysicalFileResult</a>, which returns a new file from an absolute path.</li>
+    <li><a asp-action="VirtualFileResult">VirtualFileResult</a>, which returns a new file from a relative/virtual path.</li>
+</ul>
