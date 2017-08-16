@@ -39,7 +39,6 @@ namespace AspNetCoreActionResultsDemo.Controllers
         [HttpGet]
         public IActionResult NotFoundObjectResult()
         {
-            //This is a test
             var result = new NotFoundObjectResult(new { message = "404 Not Found", currentDate = DateTime.Now });
             return result;
         }
